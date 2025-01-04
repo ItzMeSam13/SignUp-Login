@@ -7,9 +7,9 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: black;
+    background-color: rgb(208, 170, 170);
 }
-.signup{
+.signup-login{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,6 +20,7 @@ body{
     padding-bottom:4vh;
     border:none;
     border-radius: 4rem;
+
 }
 h3{
     margin-top: 5vh;
@@ -45,4 +46,13 @@ button{
 }
 .btn2{
     width: 6rem;
+}
+form{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 20px;
+    border: solid;
+    background-color: white;
+    padding: 15vh;
 }
