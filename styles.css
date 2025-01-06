@@ -10,17 +10,19 @@ body{
     background-color: rgb(208, 170, 170);
 }
 .signup-login{
+    background-color: white;
+    border-radius: 2rem;
+    /* Default container size */
+    width: 400px; 
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: white;
-    padding: 10px;
-    padding-right:10vh;
-    padding-left:10vh;
-    padding-bottom:4vh;
-    border:none;
-    border-radius: 4rem;
+    align-items: center; /* Keeps all child elements centered */
+    transition: all 1s ease; /* Smooth animation for resizing */
+    overflow: hidden; /* Hide overflowing content during animation */
 }
+
 h3{
     display: flex;
     justify-content: center;
@@ -52,26 +54,72 @@ button{
 form{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     flex-direction: column;
     gap: 50px;
-    background-color: rgb(247, 242, 242);
-    padding: 5vh;
+    background-color: white;
+    border-radius: 3rem;
+    
 }
 .name{
     display:flex;
     flex-direction: column;
     gap: 5px;
     border: solid lightgray 1px;
-    padding: 2vh 7vh 2vh 7vh;
+    padding: 2vh 7vh 2vh 2vh;
     border-radius: 1rem;
+    width:100%
 }
 .email{
     border: solid lightgray 1px;
-    padding: 2vh 7vh 2vh 7vh;
+    padding: 2vh 7vh 2vh 2vh;
     border-radius: 1rem;
+    width:100%
 }
 .password{
     border: solid lightgray 1px;
-    padding: 2vh 7vh 2vh 7vh;
+    padding: 2vh 7vh 2vh 2vh;
     border-radius: 1rem;
+    width:100%
+}
+button:hover {
+    background-color: black;
+    color: white; 
+    transition: all 0.3s ease;
+  }
+.signup-login.expanded {
+    width: 450px; /* New width after animation */
+    height: 580px; /* New height after animation */
+}
+.signup-choice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1s ease; /* Fade in effect */
+}
+.signup-login.expanded .signup-choice {
+    opacity: 1;
+}
+input {
+    border: 2px solid #ddd;
+    transition: border-color 0.3s ease;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 0.8rem;
+}
+input:focus {
+    border-color: #6c6e70; /* Highlight on focus */
+    outline: none; /* Remove default focus outline */
+}
+input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+input:hover {
+    background-color: #f0f0f0;
+    border-color: #bbb;
+}
+.btn3{
+    margin-right: 85px;
 }
