@@ -7,10 +7,15 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: rgb(208, 170, 170);
+    overflow-x: hidden;
+    background-image: url("multimedia/pexels-suzyhazelwood-1629236.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
 }
 .signup-login{
-    background-color: white;
+    background-color:rgba(255, 255, 255, 0.8);
     border-radius: 2rem;
     /* Default container size */
     width: 400px; 
@@ -21,6 +26,7 @@ body{
     align-items: center; /* Keeps all child elements centered */
     transition: all 1s ease; /* Smooth animation for resizing */
     overflow: hidden; /* Hide overflowing content during animation */
+
 }
 
 h3{
@@ -28,6 +34,7 @@ h3{
     justify-content: center;
     margin-top: 5vh;
     align-items: center;
+
 }
 
 button{
@@ -57,27 +64,27 @@ form{
     align-items: center;
     flex-direction: column;
     gap: 50px;
-    background-color: white;
+    background-color:;
     border-radius: 3rem;
     
 }
 .name{
     display:flex;
     flex-direction: column;
-    gap: 5px;
-    border: solid lightgray 1px;
+    gap: 10px;
+    border: solid cornsilk 1px;
     padding: 2vh 7vh 2vh 2vh;
     border-radius: 1rem;
     width:100%
 }
 .email{
-    border: solid lightgray 1px;
+    border: solid cornsilk  1px;
     padding: 2vh 7vh 2vh 2vh;
     border-radius: 1rem;
     width:100%
 }
 .password{
-    border: solid lightgray 1px;
+    border: solid cornsilk 1px;
     padding: 2vh 7vh 2vh 2vh;
     border-radius: 1rem;
     width:100%
