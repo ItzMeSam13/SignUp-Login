@@ -26,7 +26,6 @@ body{
     align-items: center; /* Keeps all child elements centered */
     transition: all 1s ease; /* Smooth animation for resizing */
     overflow: hidden; /* Hide overflowing content during animation */
-
 }
 
 h3{
@@ -64,7 +63,6 @@ form{
     align-items: center;
     flex-direction: column;
     gap: 50px;
-    background-color:;
     border-radius: 3rem;
     
 }
@@ -94,9 +92,20 @@ button:hover {
     color: white; 
     transition: all 0.3s ease;
   }
-.signup-login.expanded {
+.signup-login.expanded1 {
     width: 450px; /* New width after animation */
     height: 580px; /* New height after animation */
+}
+.signup-login.expanded2 {
+    width: 400px; /* New width after animation */
+    height: 400px; /* New height after animation */
+}
+.login-choice{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.01s ease; /* Fade in effect */
 }
 .signup-choice {
     display: flex;
@@ -105,7 +114,7 @@ button:hover {
     align-items: center;
     transition: opacity 1s ease; /* Fade in effect */
 }
-.signup-login.expanded .signup-choice {
+.signup-login.expanded1 .sign-uplogin.expanded2 .signup-choice .login-choice{
     opacity: 1;
 }
 input {
